@@ -1,7 +1,15 @@
 #define CATCH_CONFIG_MAIN
-
 #include <catch2/catch.hpp>
-TEST_CASE("Test with zero", "[classic]")
+
+#include <vector>
+
+using namespace std;
+
+bool isSubString(string needle, string haystack) {
+  return true;
+}
+
+TEST_CASE("Prefix", "[classic]")
 {
-   REQUIRE(42 == 42);
+  REQUIRE(isSubString("hay", "haystack"));
 }
